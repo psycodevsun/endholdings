@@ -7,8 +7,8 @@ const About = () => {
         <div className={styles.header}>
           <span className={styles.label}>About Us</span>
           <h2 className={styles.title}>
-            A Global Leader in
-            <span className={styles.highlight}> Digital Finance</span>
+            A Global Leader in<br />
+            <span className={styles.highlight}>Digital Finance</span>
           </h2>
           <p className={styles.description}>
             END HOLDINGS Inc. is a forward-thinking fintech corporation headquartered in

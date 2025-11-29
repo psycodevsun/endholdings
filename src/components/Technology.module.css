@@ -197,10 +197,21 @@
   }
 
   .values {
-    padding: 40px 24px;
+    padding: 40px 20px;
+    margin-left: -20px;
+    margin-right: -20px;
+    border-radius: 0;
   }
 
   .strengthCard {
     padding: 28px;
+  }
+
+  .valuesGrid {
+    gap: 12px;
+  }
+
+  .valueItem {
+    padding: 20px 12px;
   }
 }

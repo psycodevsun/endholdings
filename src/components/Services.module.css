@@ -226,7 +226,14 @@
   }
 
   .metrics {
-    padding: 32px 24px;
+    padding: 32px 20px;
+    margin-left: -20px;
+    margin-right: -20px;
+    border-radius: 0;
+  }
+
+  .metricsGrid {
+    gap: 20px;
   }
 
   .metricValue {

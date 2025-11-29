@@ -25,7 +25,7 @@ const CEO = () => {
 
           <div className={styles.info}>
             <div className={styles.nameSection}>
-              <h3 className={styles.name}>Daeil Sun</h3>
+              <h3 className={styles.name}>Yonghyun Lee</h3>
               <span className={styles.position}>Founder & Chief Executive Officer</span>
             </div>
 

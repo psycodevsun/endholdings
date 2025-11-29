@@ -1,38 +1,54 @@
 .services {
-  padding: 120px 24px;
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  padding: 60px 24px;
   background: #f7fafc;
 }
 
 .container {
   max-width: 1280px;
+  width: 100%;
   margin: 0 auto;
 }
 
-.header {
-  text-align: center;
-  max-width: 700px;
-  margin: 0 auto 64px;
+.layout {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 48px;
+  align-items: center;
+}
+
+@media (min-width: 1024px) {
+  .layout {
+    grid-template-columns: 0.8fr 1.2fr;
+    gap: 60px;
+  }
+}
+
+.leftContent {
+  max-width: 480px;
 }
 
 .label {
   display: inline-block;
-  padding: 8px 20px;
+  padding: 6px 16px;
   background: linear-gradient(135deg, rgba(49, 130, 206, 0.1) 0%, rgba(44, 82, 130, 0.1) 100%);
   color: #3182ce;
-  font-size: 14px;
+  font-size: 12px;
   font-weight: 600;
   border-radius: 50px;
-  margin-bottom: 24px;
+  margin-bottom: 16px;
   text-transform: uppercase;
   letter-spacing: 1px;
 }
 
 .title {
-  font-size: clamp(2rem, 4vw, 3rem);
+  font-size: clamp(2rem, 4vw, 2.75rem);
   font-weight: 800;
   color: #1a202c;
   line-height: 1.2;
-  margin-bottom: 24px;
+  margin-bottom: 20px;
 }
 
 .highlight {
@@ -43,13 +59,41 @@
   font-size: 1.125rem;
   color: #4a5568;
   line-height: 1.7;
+  margin-bottom: 32px;
+}
+
+.stats {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 16px;
+}
+
+.statItem {
+  padding: 24px 20px;
+  background: #ffffff;
+  border-radius: 16px;
+  border: 1px solid #e2e8f0;
+  text-align: center;
+}
+
+.statNumber {
+  display: block;
+  font-size: 2rem;
+  font-weight: 800;
+  color: #3182ce;
+  margin-bottom: 4px;
+}
+
+.statLabel {
+  font-size: 0.8rem;
+  color: #718096;
+  font-weight: 500;
 }
 
 .grid {
   display: grid;
   grid-template-columns: 1fr;
-  gap: 24px;
-  margin-bottom: 80px;
+  gap: 20px;
 }
 
 @media (min-width: 640px) {
@@ -58,16 +102,9 @@
   }
 }
 
-@media (min-width: 1024px) {
-  .grid {
-    grid-template-columns: repeat(3, 1fr);
-    gap: 32px;
-  }
-}
-
 .card {
   background: #ffffff;
-  padding: 36px;
+  padding: 32px;
   border-radius: 20px;
   border: 1px solid #e2e8f0;
   transition: all 0.3s ease;
@@ -99,14 +136,14 @@
 }
 
 .cardIcon {
-  width: 64px;
-  height: 64px;
+  width: 56px;
+  height: 56px;
   background: linear-gradient(135deg, rgba(49, 130, 206, 0.1) 0%, rgba(44, 82, 130, 0.1) 100%);
-  border-radius: 16px;
+  border-radius: 14px;
   display: flex;
   align-items: center;
   justify-content: center;
-  margin-bottom: 24px;
+  margin-bottom: 20px;
   transition: all 0.3s ease;
 }
 
@@ -115,8 +152,8 @@
 }
 
 .cardIcon svg {
-  width: 32px;
-  height: 32px;
+  width: 28px;
+  height: 28px;
   color: #3182ce;
   transition: color 0.3s ease;
 }
@@ -126,25 +163,43 @@
 }
 
 .cardTitle {
-  font-size: 1.25rem;
+  font-size: 1.125rem;
   font-weight: 700;
   color: #1a202c;
   margin-bottom: 12px;
 }
 
 .cardDescription {
-  font-size: 0.95rem;
+  font-size: 0.875rem;
   color: #4a5568;
-  line-height: 1.7;
+  line-height: 1.6;
+  margin-bottom: 16px;
 }
 
-.metrics {
-  background: linear-gradient(135deg, #1a365d 0%, #2c5282 100%);
-  border-radius: 24px;
-  padding: 48px;
+.cardFeatures {
   display: flex;
-  flex-direction: column;
-  gap: 40px;
+  flex-wrap: wrap;
+  gap: 8px;
+}
+
+.featureTag {
+  padding: 4px 12px;
+  background: #f7fafc;
+  color: #4a5568;
+  font-size: 0.75rem;
+  font-weight: 500;
+  border-radius: 20px;
+  border: 1px solid #e2e8f0;
+}
+
+/* Metrics Section */
+.metrics {
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 60px 24px;
+  background: linear-gradient(135deg, #1a365d 0%, #2c5282 100%);
   position: relative;
   overflow: hidden;
 }
@@ -160,22 +215,19 @@
   pointer-events: none;
 }
 
-@media (min-width: 1024px) {
-  .metrics {
-    flex-direction: row;
-    align-items: center;
-    padding: 56px 64px;
-  }
+.metricsContainer {
+  max-width: 1200px;
+  width: 100%;
+  margin: 0 auto;
 }
 
-.metricsContent {
-  flex: 1;
-  position: relative;
-  z-index: 1;
+.metricsHeader {
+  text-align: center;
+  margin-bottom: 48px;
 }
 
 .metricsTitle {
-  font-size: 1.75rem;
+  font-size: clamp(1.75rem, 3vw, 2.25rem);
   font-weight: 700;
   color: #ffffff;
   margin-bottom: 12px;
@@ -189,54 +241,126 @@
 .metricsGrid {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
-  gap: 32px;
+  gap: 24px;
   position: relative;
   z-index: 1;
+  width: 100%;
 }
 
 @media (min-width: 768px) {
   .metricsGrid {
     grid-template-columns: repeat(4, 1fr);
+    gap: 32px;
   }
 }
 
 .metricItem {
   text-align: center;
+  padding: 32px 24px;
+  background: rgba(255, 255, 255, 0.05);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  border-radius: 16px;
+  transition: all 0.3s ease;
+}
+
+.metricItem:hover {
+  background: rgba(255, 255, 255, 0.1);
+  transform: translateY(-4px);
+}
+
+.metricIcon {
+  width: 48px;
+  height: 48px;
+  background: rgba(255, 255, 255, 0.1);
+  border-radius: 12px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0 auto 16px;
+}
+
+.metricIcon svg {
+  width: 24px;
+  height: 24px;
+  color: #4299e1;
 }
 
 .metricValue {
   display: block;
-  font-size: 2.25rem;
-  font-weight: 800;
+  font-size: 1.25rem;
+  font-weight: 700;
   color: #ffffff;
   line-height: 1;
   margin-bottom: 8px;
 }
 
 .metricLabel {
-  font-size: 0.875rem;
+  font-size: 0.8rem;
+  color: #4299e1;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+  margin-bottom: 12px;
+  display: block;
+}
+
+.metricDesc {
+  font-size: 0.85rem;
   color: rgba(255, 255, 255, 0.7);
+  line-height: 1.5;
+}
+
+.metricsFooter {
+  margin-top: 48px;
+  text-align: center;
+  position: relative;
+  z-index: 1;
+}
+
+.metricsFooterText {
+  font-size: 1rem;
+  color: rgba(255, 255, 255, 0.8);
+  line-height: 1.7;
+  max-width: 700px;
+  margin: 0 auto 32px;
+}
+
+.metricsStats {
+  display: flex;
+  justify-content: center;
+  gap: 48px;
+  flex-wrap: wrap;
+}
+
+.metricsStatItem {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 4px;
+}
+
+.metricsStatNumber {
+  font-size: 1.75rem;
+  font-weight: 800;
+  color: #4299e1;
+}
+
+.metricsStatLabel {
+  font-size: 0.8rem;
+  color: rgba(255, 255, 255, 0.6);
   text-transform: uppercase;
   letter-spacing: 0.5px;
 }
 
 @media (max-width: 768px) {
   .services {
-    padding: 80px 20px;
+    padding: 60px 20px;
   }
 
   .metrics {
-    padding: 32px 20px;
-    margin-left: -20px;
-    margin-right: -20px;
-    border-radius: 0;
+    padding: 60px 20px;
   }
 
-  .metricsGrid {
-    gap: 20px;
-  }
-
-  .metricValue {
-    font-size: 1.75rem;
+  .card {
+    padding: 24px;
   }
 }

@@ -4,13 +4,6 @@ const CEO = () => {
   return (
     <section id="ceo" className={styles.ceo}>
       <div className={styles.container}>
-        <div className={styles.header}>
-          <span className={styles.label}>Leadership</span>
-          <h2 className={styles.title}>
-            Meet Our <span className={styles.highlight}>CEO</span>
-          </h2>
-        </div>
-
         <div className={styles.content}>
           <div className={styles.imageWrapper}>
             <div className={styles.imageContainer}>
@@ -24,6 +17,11 @@ const CEO = () => {
           </div>
 
           <div className={styles.info}>
+            <span className={styles.label}>Leadership</span>
+            <h2 className={styles.title}>
+              Meet Our <span className={styles.highlight}>CEO</span>
+            </h2>
+
             <div className={styles.nameSection}>
               <h3 className={styles.name}>Yonghyun Lee</h3>
               <span className={styles.position}>Founder & Chief Executive Officer</span>
@@ -39,8 +37,7 @@ const CEO = () => {
               <p>
                 Recognized as a leading authority in blockchain technology, he brings deep
                 technical expertise combined with strategic business acumen. Under his leadership,
-                END HOLDINGS has grown into a trusted partner for institutional investors
-                navigating the complexities of digital finance.
+                END HOLDINGS has grown into a trusted partner for institutional investors.
               </p>
             </div>
 
@@ -53,7 +50,7 @@ const CEO = () => {
                 </span>
                 <div>
                   <strong>Industry Pioneer</strong>
-                  <span>Early adopter and innovator in blockchain technology</span>
+                  <span>Early adopter in blockchain technology</span>
                 </div>
               </div>
               <div className={styles.highlightItem}>
@@ -66,7 +63,7 @@ const CEO = () => {
                 </span>
                 <div>
                   <strong>Technical Visionary</strong>
-                  <span>Former senior software engineer with expertise in scalable systems</span>
+                  <span>Expert in scalable systems</span>
                 </div>
               </div>
               <div className={styles.highlightItem}>
@@ -78,8 +75,8 @@ const CEO = () => {
                   </svg>
                 </span>
                 <div>
-                  <strong>Global Perspective</strong>
-                  <span>Established partnerships across Asia, Europe, and Americas</span>
+                  <strong>Global Leader</strong>
+                  <span>Partnerships across continents</span>
                 </div>
               </div>
             </div>

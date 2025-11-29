@@ -1,38 +1,54 @@
 .contact {
-  padding: 120px 24px;
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  padding: 60px 24px;
   background: #f7fafc;
 }
 
 .container {
   max-width: 1280px;
+  width: 100%;
   margin: 0 auto;
 }
 
-.header {
-  text-align: center;
-  max-width: 700px;
-  margin: 0 auto 64px;
+.layout {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 48px;
+  align-items: start;
+}
+
+@media (min-width: 1024px) {
+  .layout {
+    grid-template-columns: 1fr 1fr;
+    gap: 60px;
+  }
+}
+
+.leftContent {
+  max-width: 520px;
 }
 
 .label {
   display: inline-block;
-  padding: 8px 20px;
+  padding: 6px 16px;
   background: linear-gradient(135deg, rgba(49, 130, 206, 0.1) 0%, rgba(44, 82, 130, 0.1) 100%);
   color: #3182ce;
-  font-size: 14px;
+  font-size: 12px;
   font-weight: 600;
   border-radius: 50px;
-  margin-bottom: 24px;
+  margin-bottom: 16px;
   text-transform: uppercase;
   letter-spacing: 1px;
 }
 
 .title {
-  font-size: clamp(2rem, 4vw, 3rem);
+  font-size: clamp(2rem, 4vw, 2.75rem);
   font-weight: 800;
   color: #1a202c;
   line-height: 1.2;
-  margin-bottom: 24px;
+  margin-bottom: 20px;
 }
 
 .highlight {
@@ -43,19 +59,7 @@
   font-size: 1.125rem;
   color: #4a5568;
   line-height: 1.7;
-}
-
-.content {
-  display: grid;
-  grid-template-columns: 1fr;
-  gap: 48px;
-}
-
-@media (min-width: 1024px) {
-  .content {
-    grid-template-columns: 1fr 1.2fr;
-    gap: 64px;
-  }
+  margin-bottom: 32px;
 }
 
 .info {
@@ -121,9 +125,10 @@
   color: #3182ce;
 }
 
-.cta {
+.rightContent {
   display: flex;
-  align-items: center;
+  flex-direction: column;
+  gap: 24px;
 }
 
 .ctaCard {
@@ -190,12 +195,79 @@
   height: 20px;
 }
 
+.features {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 16px;
+}
+
+@media (min-width: 640px) {
+  .features {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+.featureItem {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  padding: 20px;
+  background: #ffffff;
+  border-radius: 16px;
+  border: 1px solid #e2e8f0;
+  transition: all 0.3s ease;
+}
+
+.featureItem:hover {
+  transform: translateY(-4px);
+  border-color: #3182ce;
+  box-shadow: 0 8px 24px rgba(49, 130, 206, 0.12);
+}
+
+.featureIcon {
+  width: 44px;
+  height: 44px;
+  min-width: 44px;
+  background: linear-gradient(135deg, rgba(49, 130, 206, 0.1) 0%, rgba(44, 82, 130, 0.1) 100%);
+  border-radius: 12px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.featureIcon svg {
+  width: 22px;
+  height: 22px;
+  color: #3182ce;
+}
+
+.featureItem div {
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
+}
+
+.featureItem strong {
+  font-size: 0.9rem;
+  font-weight: 700;
+  color: #1a202c;
+}
+
+.featureItem span {
+  font-size: 0.8rem;
+  color: #718096;
+}
+
 @media (max-width: 768px) {
   .contact {
-    padding: 80px 20px;
+    padding: 60px 20px;
   }
 
   .ctaCard {
     padding: 32px 24px;
+  }
+
+  .features {
+    grid-template-columns: 1fr;
   }
 }

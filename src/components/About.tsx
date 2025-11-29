@@ -31,6 +31,12 @@ const About = () => {
               share a passion for innovation. Together, we are redefining what's possible
               in the world of digital finance.
             </p>
+            <p className={styles.storyText}>
+              Looking ahead, we remain committed to pushing the boundaries of what's achievable.
+              Through strategic investments and continuous research, we are building a foundation
+              for long-term growth while staying true to our core values of integrity, excellence,
+              and client-first service.
+            </p>
           </div>
 
           <div className={styles.values}>

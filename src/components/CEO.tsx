@@ -15,7 +15,7 @@ const CEO = () => {
           <div className={styles.imageWrapper}>
             <div className={styles.imageContainer}>
               <img
-                src="/ceo.png"
+                src="/ceo.jpeg"
                 alt="CEO of END HOLDINGS Inc."
                 className={styles.image}
               />
@@ -31,23 +31,16 @@ const CEO = () => {
 
             <div className={styles.bio}>
               <p>
-                A visionary technologist and entrepreneur who has been at the forefront of
-                South Korea's digital transformation. With over a decade of experience in
-                software engineering and systems architecture, he has built and scaled
-                multiple technology ventures before founding END HOLDINGS Inc.
+                A visionary technologist and entrepreneur at the forefront of South Korea's
+                digital transformation. With over a decade of experience in software engineering
+                and systems architecture, he founded END HOLDINGS Inc. to bridge traditional
+                finance with emerging digital asset markets.
               </p>
               <p>
-                Recognized as one of Asia's leading authorities in blockchain technology
-                and digital asset markets, he brings deep technical expertise combined with
-                strategic business acumen. His pioneering work in cryptocurrency infrastructure
-                has earned him recognition from industry leaders and financial institutions
-                across the globe.
-              </p>
-              <p>
-                Under his leadership, END HOLDINGS has grown into a trusted partner for
-                institutional investors seeking to navigate the complexities of digital finance.
-                His commitment to innovation, integrity, and excellence continues to drive
-                the company's mission to shape the future of global finance.
+                Recognized as a leading authority in blockchain technology, he brings deep
+                technical expertise combined with strategic business acumen. Under his leadership,
+                END HOLDINGS has grown into a trusted partner for institutional investors
+                navigating the complexities of digital finance.
               </p>
             </div>
 

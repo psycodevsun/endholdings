@@ -8,7 +8,7 @@ const CEO = () => {
           <div className={styles.imageWrapper}>
             <div className={styles.imageContainer}>
               <img
-                src="/ceo.jpeg"
+                src="/ceo.png"
                 alt="CEO of END HOLDINGS Inc."
                 className={styles.image}
               />

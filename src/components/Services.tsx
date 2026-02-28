@@ -67,12 +67,12 @@ const Services = () => {
               </p>
               <div className={styles.stats}>
                 <div className={styles.statItem}>
-                  <span className={styles.statNumber}>4</span>
-                  <span className={styles.statLabel}>Core Business Lines</span>
+                  <span className={styles.statNumber}>Diverse</span>
+                  <span className={styles.statLabel}>Business Portfolio</span>
                 </div>
                 <div className={styles.statItem}>
-                  <span className={styles.statNumber}>50+</span>
-                  <span className={styles.statLabel}>Active Projects</span>
+                  <span className={styles.statNumber}>Active</span>
+                  <span className={styles.statLabel}>Global Projects</span>
                 </div>
               </div>
             </div>
@@ -153,15 +153,15 @@ const Services = () => {
             </p>
             <div className={styles.metricsStats}>
               <div className={styles.metricsStatItem}>
-                <span className={styles.metricsStatNumber}>100%</span>
-                <span className={styles.metricsStatLabel}>Client Satisfaction</span>
+                <span className={styles.metricsStatNumber}>Dedicated</span>
+                <span className={styles.metricsStatLabel}>Client Focus</span>
               </div>
               <div className={styles.metricsStatItem}>
-                <span className={styles.metricsStatNumber}>0</span>
-                <span className={styles.metricsStatLabel}>Security Breaches</span>
+                <span className={styles.metricsStatNumber}>Robust</span>
+                <span className={styles.metricsStatLabel}>Security Standards</span>
               </div>
               <div className={styles.metricsStatItem}>
-                <span className={styles.metricsStatNumber}>24/7</span>
+                <span className={styles.metricsStatNumber}>Always-On</span>
                 <span className={styles.metricsStatLabel}>Global Support</span>
               </div>
             </div>

@@ -1,0 +1,160 @@
+{
+  "version": "1.0.0",
+  "lastScanned": 1772274171631,
+  "projectRoot": "/Users/daeilsun/IdeaProjects/endholdings",
+  "techStack": {
+    "languages": [
+      {
+        "name": "JavaScript/TypeScript",
+        "version": null,
+        "confidence": "high",
+        "markers": [
+          "package.json"
+        ]
+      },
+      {
+        "name": "TypeScript",
+        "version": null,
+        "confidence": "high",
+        "markers": [
+          "tsconfig.json"
+        ]
+      }
+    ],
+    "frameworks": [
+      {
+        "name": "react",
+        "version": "19.2.0",
+        "category": "frontend"
+      },
+      {
+        "name": "react-dom",
+        "version": "19.2.0",
+        "category": "frontend"
+      },
+      {
+        "name": "vite",
+        "version": "npm:rolldown-vite@7.2.5",
+        "category": "build"
+      }
+    ],
+    "packageManager": "npm",
+    "runtime": null
+  },
+  "build": {
+    "buildCommand": "npm run build",
+    "testCommand": null,
+    "lintCommand": "npm run lint",
+    "devCommand": "npm run dev",
+    "scripts": {
+      "dev": "vite",
+      "build": "tsc -b && vite build",
+      "lint": "eslint .",
+      "preview": "vite preview"
+    }
+  },
+  "conventions": {
+    "namingStyle": null,
+    "importStyle": null,
+    "testPattern": null,
+    "fileOrganization": "type-based"
+  },
+  "structure": {
+    "isMonorepo": false,
+    "workspaces": [],
+    "mainDirectories": [
+      "public",
+      "src"
+    ],
+    "gitBranches": {
+      "defaultBranch": "main",
+      "branchingStrategy": null
+    }
+  },
+  "customNotes": [],
+  "directoryMap": {
+    "public": {
+      "path": "public",
+      "purpose": "Public files",
+      "fileCount": 4,
+      "lastAccessed": 1772274171586,
+      "keyFiles": [
+        "ceo.jpeg",
+        "ceo.png",
+        "logo.png",
+        "vite.svg"
+      ]
+    },
+    "src": {
+      "path": "src",
+      "purpose": "Source code",
+      "fileCount": 4,
+      "lastAccessed": 1772274171587,
+      "keyFiles": [
+        "App.css",
+        "App.tsx",
+        "index.css",
+        "main.tsx"
+      ]
+    },
+    "src/assets": {
+      "path": "src/assets",
+      "purpose": "Static assets",
+      "fileCount": 1,
+      "lastAccessed": 1772274171600,
+      "keyFiles": [
+        "react.svg"
+      ]
+    },
+    "src/components": {
+      "path": "src/components",
+      "purpose": "UI components",
+      "fileCount": 16,
+      "lastAccessed": 1772274171602,
+      "keyFiles": [
+        "About.module.css",
+        "About.tsx",
+        "CEO.module.css"
+      ]
+    }
+  },
+  "hotPaths": [
+    {
+      "path": "src/components/Technology.tsx",
+      "accessCount": 8,
+      "lastAccessed": 1772274331037,
+      "type": "file"
+    },
+    {
+      "path": "src/components/Services.tsx",
+      "accessCount": 4,
+      "lastAccessed": 1772274300195,
+      "type": "file"
+    },
+    {
+      "path": "src/components/Hero.tsx",
+      "accessCount": 3,
+      "lastAccessed": 1772274284807,
+      "type": "file"
+    },
+    {
+      "path": "src/components/About.tsx",
+      "accessCount": 3,
+      "lastAccessed": 1772274289923,
+      "type": "file"
+    },
+    {
+      "path": "src/App.tsx",
+      "accessCount": 1,
+      "lastAccessed": 1772274243531,
+      "type": "file"
+    },
+    {
+      "path": "src/components/CEO.tsx",
+      "accessCount": 1,
+      "lastAccessed": 1772274245490,
+      "type": "file"
+    }
+  ],
+  "userDirectives": []
+}

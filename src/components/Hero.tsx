@@ -37,8 +37,8 @@ const Hero = () => {
 
           <div className={styles.sideInfo}>
             <div className={styles.infoItem}>
-              <span className={styles.infoNumber}>10+</span>
-              <span className={styles.infoLabel}>Years of Excellence</span>
+              <span className={styles.infoNumber}>Proven</span>
+              <span className={styles.infoLabel}>Track Record</span>
             </div>
             <div className={styles.infoItem}>
               <span className={styles.infoNumber}>Global</span>

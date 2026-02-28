@@ -31,19 +31,19 @@ const About = () => {
             </div>
             <div className={styles.stats}>
               <div className={styles.statItem}>
-                <span className={styles.statNumber}>10+</span>
-                <span className={styles.statLabel}>Years of Excellence</span>
+                <span className={styles.statNumber}>Trusted</span>
+                <span className={styles.statLabel}>Industry Leadership</span>
               </div>
               <div className={styles.statItem}>
                 <span className={styles.statNumber}>Global</span>
                 <span className={styles.statLabel}>Market Presence</span>
               </div>
               <div className={styles.statItem}>
-                <span className={styles.statNumber}>100+</span>
-                <span className={styles.statLabel}>Partners Worldwide</span>
+                <span className={styles.statNumber}>Growing</span>
+                <span className={styles.statLabel}>Partner Network</span>
               </div>
               <div className={styles.statItem}>
-                <span className={styles.statNumber}>24/7</span>
+                <span className={styles.statNumber}>Dedicated</span>
                 <span className={styles.statLabel}>Support & Service</span>
               </div>
             </div>

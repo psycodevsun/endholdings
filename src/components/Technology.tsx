@@ -12,7 +12,7 @@ const Technology = () => {
       ),
       title: 'Global Network',
       description: 'Extensive partnerships across Asia, Europe, and the Americas, enabling seamless cross-border operations.',
-      stats: '20+ Countries',
+      stats: 'Worldwide Reach',
     },
     {
       icon: (
@@ -25,7 +25,7 @@ const Technology = () => {
       ),
       title: 'Expert Team',
       description: 'Industry veterans and technology innovators united by a shared commitment to excellence.',
-      stats: '50+ Experts',
+      stats: 'Top-tier Talent',
     },
     {
       icon: (
@@ -35,7 +35,7 @@ const Technology = () => {
       ),
       title: 'Industry Leadership',
       description: 'Pioneers in digital finance, consistently setting new industry standards and best practices.',
-      stats: '10+ Years',
+      stats: 'Proven Legacy',
     },
     {
       icon: (
@@ -45,7 +45,7 @@ const Technology = () => {
       ),
       title: 'Trusted Reputation',
       description: 'Built on integrity, transparency, and delivering on our promises to partners worldwide.',
-      stats: '100% Compliance',
+      stats: 'Full Compliance',
     },
   ];
 
@@ -108,12 +108,12 @@ const Technology = () => {
               </p>
               <div className={styles.stats}>
                 <div className={styles.statItem}>
-                  <span className={styles.statNumber}>$1B+</span>
-                  <span className={styles.statLabel}>Assets Managed</span>
+                  <span className={styles.statNumber}>Scalable</span>
+                  <span className={styles.statLabel}>Asset Management</span>
                 </div>
                 <div className={styles.statItem}>
-                  <span className={styles.statNumber}>99.9%</span>
-                  <span className={styles.statLabel}>System Uptime</span>
+                  <span className={styles.statNumber}>Reliable</span>
+                  <span className={styles.statLabel}>Infrastructure</span>
                 </div>
               </div>
             </div>
@@ -154,16 +154,16 @@ const Technology = () => {
             </p>
             <div className={styles.valuesStats}>
               <div className={styles.valuesStatItem}>
-                <span className={styles.valuesStatNumber}>10+</span>
+                <span className={styles.valuesStatNumber}>Proven</span>
                 <span className={styles.valuesStatLabel}>Years of Trust</span>
               </div>
               <div className={styles.valuesStatItem}>
-                <span className={styles.valuesStatNumber}>100+</span>
-                <span className={styles.valuesStatLabel}>Global Partners</span>
+                <span className={styles.valuesStatNumber}>Worldwide</span>
+                <span className={styles.valuesStatLabel}>Partner Network</span>
               </div>
               <div className={styles.valuesStatItem}>
-                <span className={styles.valuesStatNumber}>$1B+</span>
-                <span className={styles.valuesStatLabel}>Assets Managed</span>
+                <span className={styles.valuesStatNumber}>Growing</span>
+                <span className={styles.valuesStatLabel}>Asset Portfolio</span>
               </div>
             </div>
           </div>

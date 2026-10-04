@@ -65,6 +65,27 @@ const Services = () => {
                 END HOLDINGS operates across multiple domains of digital finance,
                 delivering comprehensive solutions for our global partners.
               </p>
+              <div className={styles.card}>
+                <span className={styles.label}>Our Service</span>
+                <h3 className={styles.cardTitle}>boddaring · 보따링</h3>
+                <p className={styles.cardDescription}>
+                  boddaring is our subscription-based market information service for digital assets.
+                  It compares spot prices and order books across exchanges, with exchange rates,
+                  available quantities, and deposit and withdrawal filters to help members review
+                  price differences. News, exchange announcements, and events bring market updates
+                  together in one place.
+                </p>
+                <div className={styles.cardFeatures}>
+                  <span className={styles.featureTag}>Cross-exchange Signals</span>
+                  <span className={styles.featureTag}>Order Book Data</span>
+                  <span className={styles.featureTag}>Market Updates</span>
+                </div>
+                <p className={styles.cardDescription}>
+                  <a href="https://bbddrr.com" target="_blank" rel="noopener noreferrer">
+                    Explore boddaring →
+                  </a>
+                </p>
+              </div>
               <div className={styles.stats}>
                 <div className={styles.statItem}>
                   <span className={styles.statNumber}>Diverse</span>

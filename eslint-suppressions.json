@@ -1,0 +1,17 @@
+{
+  ".git-works/.preserved/antigravity-scratch/src/components/Footer.tsx": {
+    "jsx-a11y/anchor-is-valid": {
+      "count": 4
+    }
+  },
+  "src/components/Footer.tsx": {
+    "jsx-a11y/anchor-is-valid": {
+      "count": 3
+    }
+  },
+  "src/components/Header.tsx": {
+    "jsx-a11y/anchor-is-valid": {
+      "count": 1
+    }
+  }
+}

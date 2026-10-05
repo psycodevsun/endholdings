@@ -24,3 +24,36 @@ dist-ssr
 
 # Project files
 *.pdf
+
+# 닷폴더 전체
+.*/
+
+# OS
+Thumbs.db
+
+# env
+.env.*
+
+# 키/인증서
+*.pem
+*.key
+*.p8
+*.p12
+*.crt
+*.cer
+*.jks
+*.keystore
+
+# 의존성/빌드
+build/
+out/
+*.tsbuildinfo
+next-env.d.ts
+
+# IDE 파일
+*.iws
+*.ipr
+.classpath
+.project
+.factorypath
+.springBeans
